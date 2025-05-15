@@ -1,0 +1,88 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 90%;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  margin: 5px 0;
+}
+
+.modal-content button {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Styles pour le thème clair */
+.modal-content.light {
+  background-color: white;
+  color: black;
+}
+
+.modal-content.light button {
+  background-color: #f44336; /* Rouge pour le bouton */
+  color: white;
+}
+
+/* Styles pour le thème sombre */
+.modal-content.dark {
+  background-color: #333; /* Fond sombre */
+  color: white; /* Texte clair */
+}
+
+.modal-content.dark button {
+  background-color: #f44336; /* Rouge pour le bouton, reste le même */
+}
+.label {
+  background-color: #e0e0e0; /* Couleur de fond des étiquettes */
+  border-radius: 12px;
+  padding: 5px 10px;
+  margin: 5px;
+  display: inline-block;
+}
+.label:hover {
+  background-color: #d0d0d0; /* Couleur de fond au survol */
+}
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+.modal-content h2 {
+    margin: 0 0 10px;
+}

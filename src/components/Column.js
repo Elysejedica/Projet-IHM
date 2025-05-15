@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Draggable } from 'react-beautiful-dnd';
 
-const Column = ({ column, provided, addTask, removeTask, editTask }) => {
+const Column = ({ column, provided, addTask, removeTask, editTask, onTaskClick }) => {
   const [addingTask, setAddingTask] = useState(false);
   const [newTaskTitle, setNewTaskTitle] = useState('');
   const [editingTaskId, setEditingTaskId] = useState(null);
@@ -83,6 +83,7 @@ const Column = ({ column, provided, addTask, removeTask, editTask }) => {
                 ref={provided.innerRef}
                 {...provided.draggableProps}
                 {...provided.dragHandleProps}
+                onClick = {() => onTaskClick(task)}
               >
                 {editingTaskId === task.id ? (
                   <>
