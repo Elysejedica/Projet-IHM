@@ -1,0 +1,29 @@
+# Python
+*.pyc
+__pycache__/
+
+# Environment variables
+.env
+
+# Django
+/staticfiles/
+/media/
+
+# IDEs
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Migrations (optionnel, mais souvent versionnées)
+# migrations/
